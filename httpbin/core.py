@@ -1194,7 +1194,7 @@ def digest_auth(
 
 @app.route("/delay/<delay>", methods=["GET", "POST", "PUT", "DELETE", "PATCH", "TRACE"])
 def delay_response(delay):
-    """Returns a delayed response (max of 300 seconds).
+    """Returns a delayed response (max of 310 seconds).
     ---
     tags:
       - Dynamic data
@@ -1208,7 +1208,7 @@ def delay_response(delay):
       200:
         description: A delayed response.
     """
-    delay = min(float(delay), 300)
+    delay = min(float(delay), 310)
 
     time.sleep(delay)
 
@@ -1234,7 +1234,7 @@ def drip():
         name: numbytes
         type: integer
         description: The number of bytes to respond with
-        default: 10
+        default: 1024
         required: false
       - in: query
         name: code
