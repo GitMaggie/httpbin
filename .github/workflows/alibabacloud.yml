@@ -29,7 +29,7 @@ env:
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
   NAMESPACE: yibei
   IMAGE: eryi-registry.cn-hangzhou.cr.aliyuncs.com/yibei/httpbin
-  TAG: ${{ github.sha }}
+  TAG: github
   ACK_CLUSTER_ID: "cf746253c84584a5ea0a6fce2c57ce8eb"
   ACK_DEPLOYMENT_NAME: httpbin
 
@@ -37,7 +37,7 @@ env:
   ACR_EE_INSTANCE_ID: cri-qwd8kugx9no8szvl
   ACR_EE_NAMESPACE: yibei
   ACR_EE_IMAGE: httpbin
-  ACR_EE_TAG: ${{ github.sha }}
+  ACR_EE_TAG: github
 
 permissions:
   contents: read
