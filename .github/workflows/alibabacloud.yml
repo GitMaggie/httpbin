@@ -28,7 +28,7 @@ env:
   REGION_ID: cn-hangzhou
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
   NAMESPACE: yibei
-  IMAGE: httpbin
+  IMAGE: eryi-registry.cn-hangzhou.cr.aliyuncs.com/yibei/httpbin
   TAG: ${{ github.sha }}
   ACK_CLUSTER_ID: "cf746253c84584a5ea0a6fce2c57ce8eb"
   ACK_DEPLOYMENT_NAME: httpbin
