@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL name="httpbin"
 LABEL version="0.9.2"
-LABEL description="A simple HTTP service. Delay time updated to 301s by yibei-ali-test"
+LABEL description="A simple HTTP service. Delay time updated to 301s by yibei-ali-test-888"
 LABEL org.kennethreitz.vendor="Kenneth Reitz-yibei-阿里"
 
 ENV LC_ALL=C.UTF-8
